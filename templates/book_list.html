@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Books list</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/book_list.css') }}">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+      <div id="particle-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+      {%if s == 'opps'%}
+      <div class="choice" style="margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);text-align: center;">
+        <h4>{{book}}</h4> 
+        <h4>Please search another book.</h4>
+      </div>
+      
+
+      {%else%}
+      <div class="neon">
+        <h4 class="choice">{{book[0]}}!!!</h4> 
+      </div>
+            
+            <div class="typewriter">
+              
+              <p>{{book[1]}}</p>
+              <p>{{book[2]}}</p>
+              <p>{{book[3]}}</p>
+              <p>{{book[4]}}</p>
+              <p>{{book[5]}}</p>
+              <p>{{book[6]}}</p>
+              <p>{{book[7]}}</p>
+              <p>{{book[8]}}</p>
+              <p>{{book[9]}}</p>
+              <p>{{book[10]}}</p>
+              <p>{{book[11]}}</p>
+              <p>{{book[12]}}</p>
+              <p>{{book[13]}}</p>
+              <p>{{book[14]}}</p>
+              <p>{{book[15]}}</p>
+            </div>
+      {%endif%}    
+        
+    </body>
+</html>

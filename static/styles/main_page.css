@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+    overflow-x:hidden;
+    overflow-y: scroll;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: left;
+}
+
+.form-box{
+    text-align: center;
+}
+.row {
+    display: flex;
+    margin-top: 30px;
+    margin-left:-100px;
+}
+
+.sicons{
+    height: 30px;
+}
+  
+.column {
+    text-align: center;
+    flex:20%;
+    margin-bottom: 10px;
+    padding-left: -20px;
+    margin:30px; /* Added */
+}
+
+.logo{
+    position: fixed;
+    top: 2px;
+    left:2px;
+    height: 150px;
+    width: 150px;
+}
+p{
+    padding-left:350px;
+    margin-top:-30px;
+    left: 330px;
+    font-size: 12;
+}
+.header{
+    /*height: 100vh;*/
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding-top: 10px;
+    font-family: sans-serif;
+}
+h1{
+    color: yellow;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.search{
+    height: 50px;
+    padding: 10px;
+    border:solid 3px #f1f1f1;
+    border-radius: 25px;
+    outline: none;
+    width: 400px;
+    font-size: 20px;
+
+}
+.search-btn{
+    height: 50px;
+    width: 150px;
+    background:yellowgreen;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: black;
+    
+}
+.search-btn:hover{
+    opacity: 1;
+}
+
+.book{
+    display: flex;
+    justify-content: center;
+    /* margin-left: 5px; */
+    padding-top: 10px;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.search_static{
+    position:absolute;
+    background:white;
+    border:0;
+    color:#000;
+    font-weight: 400;
+    font-size:20px;
+    text-align:left;
+    width:300px;
+    top:20px;
+    outline:beige;
+}
+
+.book_image{
+    border: black;
+}
+
+/* footer{
+    position: ;
+} */
+.social-media{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 35px;
+    /* top:0;
+    top: 90%;
+    left: 50%;
+    margin-bottom: 10px; */
+    transform: translate(-50%,-50%);
+}
+.social-media a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: #2c3e50;
+    color: white;
+    margin: 0 6px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 24px;
+}
+.social-media a:hover{
+    background: rgba(3, 128, 201, 0.993);
+}
+
+.social-media a i{
+    transition: 0.5s all;
+}
+.social-media a:hover > i{
+    transform: scale(1.2) rotate(25deg);
+}
+
+body {
+    -webkit-animation: theme 21s linear infinite;
+            animation: theme 21s linear infinite;
+    }
+    body:after, body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    width: 100vmax;
+    height: 100vmax;
+    background: rgba(0, 0, 0, 0.05);
+    -webkit-animation: background 90s linear infinite;
+            animation: background 90s linear infinite;
+    }
+    body:after {
+    left: 15vw;
+    }
+    body:before {
+    right: 15vw;
+    -webkit-animation-delay: -30s;
+            animation-delay: -30s;
+    animation-direction: reverse;
+    }
+
+    @-webkit-keyframes theme {
+    0% {
+        background: #74C390;
+    }
+    16% {
+        background: #5DBDB6;
+    }
+    33% {
+        background: #59D4E1;
+    }
+    50% {
+        background: #51BCE8;
+    }
+    66% {
+        background: #FA5374;
+    }
+    83% {
+        background: #E46653;
+    }
+    100% {
+        background: #74C390;
+    }
+    }
+
+    @keyframes theme {
+    0% {
+        background: #74C390;
+    }
+    16% {
+        background: #5DBDB6;
+    }
+    33% {
+        background: #59D4E1;
+    }
+    50% {
+        background: #51BCE8;
+    }
+    66% {
+        background: #FA5374;
+    }
+    83% {
+        background: #E46653;
+    }
+    100% {
+        background: #74C390;
+    }
+    }
+    @-webkit-keyframes background {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }
+    @keyframes background {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }
